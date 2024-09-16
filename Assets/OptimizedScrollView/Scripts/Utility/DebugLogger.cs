@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace zabaglione.OptimizedScrollView
+namespace Zabaglione.OptimizedScrollView
 {
     public static class DebugUtility
     {

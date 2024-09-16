@@ -1,7 +1,7 @@
 using System; // 追加: Action デリゲートを使用するために必要
 using UnityEngine;
 using UnityEngine.UI;
-using zabaglione.OptimizedScrollView;
+using Zabaglione.OptimizedScrollView;
 
 /// <summary>
 /// ScrollViewの使用例クラス

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace zabaglione.OptimizedScrollView
+namespace Zabaglione.OptimizedScrollView
 {
     /// <summary>
     /// ScrollViewのPresenterクラス
