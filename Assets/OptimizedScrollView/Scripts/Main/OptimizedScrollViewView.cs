@@ -8,12 +8,12 @@ namespace zabaglione.OptimizedScrollView
 {
     public class OptimizedScrollViewView : MonoBehaviour
     {
-        [SerializeField] private RectTransform content; // ContentのRectTransform
         [SerializeField] private GameObject itemPrefab; // アイテムのプレハブ
         [SerializeField] private int bufferCount = 3; // バッファ数
         [SerializeField] private bool enableDebugLogs = false; // デバッグログの有効/無効を設定
 
         private ScrollRect scrollRect;
+        private RectTransform content; // ContentのRectTransform
         private int poolSize;
         private List<GameObject> pool = new List<GameObject>();
         private Action<int, GameObject> updateItemCallback;
@@ -50,6 +50,13 @@ namespace zabaglione.OptimizedScrollView
             if (scrollRect == null)
             {
                 Debug.LogError("ScrollRectコンポーネントがありません。");
+                yield break;
+            }
+
+            content = scrollRect.content;
+            if (content == null)
+            {
+                Debug.LogError("ScrollRectのContentが設定されていません。");
                 yield break;
             }
 
