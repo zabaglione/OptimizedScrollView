@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace zabaglione.OptimizedScrollView
+namespace Zabaglione.OptimizedScrollView
 {
     public class OptimizedScrollViewView : MonoBehaviour
     {
